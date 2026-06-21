@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project presents the design and implementation of a 32-Bit Single Cycle Processor using Verilog HDL. The processor was developed by integrating fundamental datapath and control modules and verified through simulation using Xilinx Vivado.
+This project presents the design, simulation, synthesis, and FPGA implementation of a 32-Bit Single Cycle Processor using Verilog HDL. The processor was developed by integrating fundamental datapath and control modules and verified using Xilinx Vivado.
 
-The project was undertaken to gain practical experience in Computer Architecture, Digital Logic Design, FPGA-based system design, and hardware description languages.
+The project was undertaken to gain practical experience in Computer Architecture, Digital Logic Design, FPGA-based system design, and Hardware Description Languages (HDLs).
 
 ---
 
@@ -12,10 +12,13 @@ The project was undertaken to gain practical experience in Computer Architecture
 
 * 32-Bit Datapath Architecture
 * Single Cycle Instruction Execution
-* Modular Verilog Design
-* Instruction Fetch, Decode, Execute, Memory Access, and Write-Back Stages
+* Modular Verilog HDL Design
+* Instruction Fetch, Decode, Execute, Memory Access, and Write-Back Operations
 * Branch Control Logic
 * Functional Simulation and Verification
+* RTL Analysis
+* Logic Synthesis
+* FPGA Placement and Routing
 
 ---
 
@@ -60,13 +63,15 @@ src/
 
 testbench/
 ├── Individual module testbenches
-├── Processor testbench
+├── Top-level processor testbench
 
 screenshots/
-├── Processor architecture
+├── 32-bit processor architecture diagram
 ├── RTL schematic
 ├── Synthesized schematic
 ├── Simulation waveform
+├── FPGA device implementation view
+├── FPGA routing view
 ```
 
 ---
@@ -79,27 +84,30 @@ screenshots/
 4. Perform behavioral simulation.
 5. Generate RTL schematic.
 6. Run synthesis and analyze synthesized design.
-7. Verify processor functionality through simulation waveforms.
+7. Perform FPGA implementation (placement and routing).
+8. Verify processor functionality through simulation waveforms.
 
 ---
 
 ## Results
 
-Project Outputs
+All supporting outputs are available in the **screenshots** directory, including:
 
-All supporting design outputs are available in the  [screenshots](./screenshots) directory, including:
+* Processor Architecture Diagram
+* RTL Schematic
+* Synthesized Design Schematic
+* Simulation Waveform
+* FPGA Device Implementation View
+* FPGA Routing View
 
-Processor Architecture Diagram
-RTL Schematic
-Synthesized Design Schematic
-Simulation Waveforms
+The simulation results demonstrate successful instruction execution, control signal generation, ALU operations, memory access, and processor datapath functionality. FPGA implementation and routing results confirm successful hardware realization of the design in Xilinx Vivado.
 
-These outputs demonstrate the successful implementation, integration, synthesis, and functional verification of the 32-Bit Single Cycle Processor.
+---
 
 ## Tools Used
 
 * Verilog HDL
-* Xilinx Vivado
+* Xilinx Vivado 2025.2
 * GitHub
 
 ---
@@ -108,18 +116,22 @@ These outputs demonstrate the successful implementation, integration, synthesis,
 
 Through this project, I gained hands-on experience in:
 
+* Computer Architecture
 * Processor Datapath Design
 * Control Unit Development
 * Verilog HDL Coding
 * Functional Verification
+* RTL Analysis
 * FPGA Design Flow
+* Logic Synthesis and Implementation
 * Hardware-Oriented Problem Solving
 
 ---
 
 ## Author
 
-Garima Singh
+**Garima Singh**
 
 B.Tech – Information Technology
+
 2nd,year
