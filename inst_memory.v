@@ -25,8 +25,10 @@ module inst_memory(
     output wire [31:0] inst
     );
     reg [31:0] mem [0:255];
-  //assign inst = address + 32'd1;
+  integer i;
   initial begin
+  for(i=0; i<256; i=i+1)
+      mem[i] = 32'h00000000;
     mem[0] = 32'h00221820;
     mem[1] = 32'h00412022;
     mem[2] = 32'h8C050000;
