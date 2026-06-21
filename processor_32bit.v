@@ -22,7 +22,9 @@
 
 module processor_32bit(
     input wire clk,
-    input wire rst
+    input wire rst,
+    output wire [31:0] debug_pc,
+    output wire [31:0] debug_result
 );
 wire [31:0] pc_current;
 wire [31:0] pc4;
@@ -167,5 +169,7 @@ PCSrc_mux PCM0(
     .PCSrc(PCSrc),
     .next_pc(next_pc)
 );
+assign debug_pc = pc_current;
+assign debug_result = alu_result;
 
 endmodule
